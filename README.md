@@ -89,7 +89,14 @@ examples 2
 ```
 from V7xStyle import Animation
 
-
+AQ = ['|','█','▒','|']
+CQ = [W,G,W,W]
+Animation.Downloading( Animation=AQ,
+                       Colors=CQ,
+                       text='Loading',
+                       time=0.2,
+                       width=25 )
 ```
-
-
+Only 5 Values in this function
+~~~~~~~~~~~~~~~~~~~~
+#### Style class
