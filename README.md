@@ -10,7 +10,7 @@ Also, you can control the colors easily
 
 # The method of work
 ## Animation class
-###  SlowLine
+###  SlowLine function
 ```
 from V7xStyle import Animation
 text = '''
@@ -25,7 +25,7 @@ Animation.SlowLine(text, time=0.001)
 ```
 Only 2 values in this function
 __________________________
-###  SlowText
+###  SlowText function
 ```
 from V7xStyle import Animation
 text = 'text text text text text text'
@@ -34,7 +34,7 @@ Animation.SlowText(text, end=False)
 ```
 Only 2 values in this function
 __________________________
-###  Loading
+###  Loading function
 
 example 1... 
 ```
@@ -63,7 +63,7 @@ Animation.Loading( text=' text - ',
 ```
 Only 4 values in this function
 __________________________
-###  Text
+###  Text function
 ```
 from V7xStyle import Animation
 from V7xStyle import (R,G,W,B,P,C,Bl,Y)
@@ -77,7 +77,7 @@ Animation.Text( UpperTextColor=R,
 ```
 Only 6 values in this function
 __________________________
-###  Downloading
+###  Downloading function
 
 example 1
 ```
@@ -101,7 +101,7 @@ Only 5 values in this function
 
 ___
 ## Style class
-### Center
+### Center function
 ```
 from V7xStyle import Style
 
@@ -114,7 +114,7 @@ print (S)
 ```
 No values in this function
 ___
-###  Square
+###  Square function
 example 1
 ```
 from V7xStyle import Style
