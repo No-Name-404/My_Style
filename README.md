@@ -9,8 +9,8 @@ Also, you can control the colors easily
 
 
 # The method of work
-#### Animation class
-#### * SlowLine
+## Animation class
+###  SlowLine
 ```
 from V7xStyle import Animation
 text = '''
@@ -25,7 +25,7 @@ Animation.SlowLine(text, time=0.001)
 ```
 Only 2 Values in this function
 __________________________
-* SlowText
+###  SlowText
 ```
 from V7xStyle import Animation
 text = 'text text text text text text'
@@ -34,7 +34,7 @@ Animation.SlowText(text, end=False)
 ```
 Only 2 Values in this function
 __________________________
-* Loading
+###  Loading
 
 example 1... 
 ```
@@ -63,7 +63,7 @@ Animation.Loading( text=' text - ',
 ```
 Only 4 Values in this function
 __________________________
-* Text
+###  Text
 ```
 from V7xStyle import Animation
 from V7xStyle import (R,G,W,B,P,C,Bl,Y)
@@ -77,7 +77,7 @@ Animation.Text( UpperTextColor=R,
 ```
 Only 6 Values in this function
 __________________________
-* Downloading
+###  Downloading
 
 example 1
 ```
