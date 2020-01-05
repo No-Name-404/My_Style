@@ -23,7 +23,6 @@ text text text text text text
 '''
 Animation.SlowLine(text, time=0.001)
 ```
--------------------
 __________________________
 * SlowText
 ```
