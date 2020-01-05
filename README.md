@@ -1,7 +1,7 @@
 # V7xStyle
 #### There are 3 classes that you can work on
 * [Animation](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#animation-class)
-* Style
+* [Style](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#style-class) 
 * Text
 
 Also, you can control the colors easily
@@ -10,7 +10,7 @@ Also, you can control the colors easily
 
 # The method of work
 #### Animation class
-* SlowLine
+#### * SlowLine
 ```
 from V7xStyle import Animation
 text = '''
