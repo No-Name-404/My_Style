@@ -1,5 +1,9 @@
+'''
+for more information ...
+[ https://github.com/No-Name-404/V7xStyle ]
+'''
 import time ,sys ,os
-# colors...
+# color...
 BL,Bl,R,G,Y,B,P,C,W = [
     '\033[0;30m', # black
     '\033[1;30m', # grey
@@ -11,6 +15,7 @@ BL,Bl,R,G,Y,B,P,C,W = [
     '\033[0;36m', # cyan
     '\033[0;37m', # white
 ]
+Color_C = []
 
 class Color:
     def c(self,text):
@@ -25,14 +30,9 @@ class Color:
         return text
 
     def remove_c(self,text):
-        text = text.replace(Bl,'')
-        text = text.replace(R,'')
-        text = text.replace(G,'')
-        text = text.replace(Y,'')
-        text = text.replace(B,'')
-        text = text.replace(P,'')
-        text = text.replace(C,'')
-        text = text.replace(W,'')
+        remove_c = [BL,Bl,R,G,Y,B,P,C,W]+Color_C
+        for i in remove_c:
+            text = text.replace(i,'')
         return text
 
 class text:
@@ -58,9 +58,6 @@ class text:
             print(text[i],end='')
         print('')
 
-    # found sides of any text design
-    # for example how many spase in top
-    # and what is the smallest space in right
     def Measure_Sides_text(self,text):
         text = Color().remove_c(text)
         text = text.split('\n')
@@ -142,9 +139,6 @@ class text:
 
         return style[0:-2]
 
-    # to delete all spaces in any text
-    # for example delete all spaces in top
-    # and in down and right.
     def Delete_Spaces(self,text):
         sides = self.Measure_Sides_text(text)
         text = text.split('\n')
@@ -174,13 +168,6 @@ class text:
         return style
 
 class style(text):
-    # to draw a square and put text
-    # in side the square...
-    # square_1['┌','│','└','─','┘','│','┐','─']
-    # square_2['╔','║','╚','═','╝','║','╗','═']
-    # Colors[
-    # first index for square color,
-    # second index for text color]
     def square(self,text,Square,Colors):
         Width = self.Measure_Sides_text(text)
         Width = Width[3]+Width[1]
@@ -194,8 +181,6 @@ class style(text):
 
         return self.Delete_Spaces(style)
 
-    # to put squares or text togrther...
-    # the height of squares must be (equal)
     def Mix_Squares_text(self,text,space):
         how_many_squars = len(text)
         style = ''
@@ -233,7 +218,6 @@ class style(text):
 
         return STYLE[0:-1]
 
-    # put text in the middle...
     def text_In_The_Middle(self,*args):
         style = ''
         temp = [text().Measure_Sides_text(i)[3] for i in args]
@@ -272,9 +256,6 @@ class style(text):
         return text_y[0:-1]
 
 class animation:
-    # this animation is similar to the metasploit
-    # introduction, for use just give text and
-    # colors...
     def A(self,color_text,color_TEXT,t,Num=' [A1]',color_Num=W,text=' python for ever ',Range=2):
         print(color_Num+Num+color_text+text,end='\r')
         for i in range(Range):
@@ -321,14 +302,6 @@ class Text:
     def toilet(self):
         text().toilet(self.text)
 
-    def SlowText(self,end=False):
-        text().Incremental_Small_Text(self.text)
-        if not end:
-            print('')
-
-    def SlowLine(self,time=0.1):
-        text().Incremental_Big_Text(self.text,Time=time)
-
     @property
     def GetSpace(self):
         size = text().Measure_Sides_text(self.text)
@@ -373,15 +346,10 @@ class Style():
         text = tmp
         return text
 
-    # square_1 ['┌','│','└','─','┘','│','┐','─']
-    # square_2 ['╔','║','╚','═','╝','║','╗','═']
-    # square_3 ['╔','╢','╚','╤','╝','╟','╗','╧']
     Square_Style = False
     def Square(self,Square=['╔','║','╚','═','╝','║','╗','═'],padding_x=0,padding_y=0,Space=0,Color=R,Equal=True,cols=False):
         if Equal:
             self.args = self.Equal(*self.args)
-        if self.Square_Style:
-            Square = self.Square_Style
         return style().MultSquares(*self.args,Square=Square,padding_x=padding_x,padding_y=padding_y,space=Space,Color=Color,cols=cols)
 
     # put text in the middle...
@@ -390,11 +358,21 @@ class Style():
         return style().text_In_The_Middle(*self.args)
 
 class Animation:
+    @classmethod
+    def SlowLine(self,Text,time=0.1):
+        text().Incremental_Big_Text(Text,Time=time)
+
+    @classmethod
+    def SlowText(self,Text,end=False):
+        text().Incremental_Small_Text(Text)
+        if not end:
+            print('')
+
     def Loading(Animation=['/','-','\\','|'],text='',time=0.1,repeat=10):
         return animation().B(Animation,Num=Color().c(text),t=time,Range=repeat)
 
-    def Downloading(Animation=['|','█','▒','|'],Color=[W,G,W,W],text='Loading',time=0.2,width=25):
-        return animation().C(Animation,Color,Num=Color().c(text),t=time,width=width)
+    def Downloading(Animation=['│','█','▒','│'],Colors=[W,G,W,W],text='Loading',time=0.2,width=25):
+        return animation().C(Animation,Colors,Num=Color().c(text),t=time,width=width)
 
     def Text(UpperTextColor=R,LowerTextColor=W,Animation=False,text='',time=0.2,repeat=2):
         if Animation:
