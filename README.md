@@ -23,7 +23,7 @@ text text text text text text
 '''
 Animation.SlowLine(text, time=0.001)
 ```
-Only 2 Values in this function
+Only 2 values in this function
 __________________________
 ###  SlowText
 ```
@@ -32,7 +32,7 @@ text = 'text text text text text text'
 
 Animation.SlowText(text, end=False)
 ```
-Only 2 Values in this function
+Only 2 values in this function
 __________________________
 ###  Loading
 
@@ -61,7 +61,7 @@ Animation.Loading( text=' text - ',
                    repeat=10,
                    time=0.5 )
 ```
-Only 4 Values in this function
+Only 4 values in this function
 __________________________
 ###  Text
 ```
@@ -75,7 +75,7 @@ Animation.Text( UpperTextColor=R,
                 time=0.2,
                 repeat=2 )
 ```
-Only 6 Values in this function
+Only 6 values in this function
 __________________________
 ###  Downloading
 
@@ -85,7 +85,7 @@ from V7xStyle import Animation
 
 Animation.Downloading()
 ```
-examples 2
+example 2
 ```
 from V7xStyle import Animation
 
@@ -97,8 +97,39 @@ Animation.Downloading( Animation=AQ,
                        time=0.2,
                        width=25 )
 ```
-Only 5 Values in this function
+Only 5 values in this function
 
 ___
-#### Style class
+## Style class
+### Center
+```
+from V7xStyle import Style
 
+a = '12345'
+b = '123'
+c = '1'
+
+S = Style( a,b,c ).Center
+print (S)
+```
+No values in this function
+___
+###  Square
+example 1
+```
+from V7xStyle import Style
+
+S = Style('text').Square()
+print(S)
+```
+example 2
+```
+from V7xStyle import Style
+
+S = Style('A','B','C').Square()
+print(S)
+
+SQ = ['text']*10
+S = Style(*SQ).Square()
+print(S)
+```
