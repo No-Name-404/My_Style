@@ -1,8 +1,6 @@
 # V7xStyle
+There are 3 classes that you can work on
 * Animation
 * Style
 * Text
 
-- For more informtion...
-
-https://github.com/No-Name-404/V7xStyle
