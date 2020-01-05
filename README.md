@@ -98,5 +98,6 @@ Animation.Downloading( Animation=AQ,
                        width=25 )
 ```
 Only 5 Values in this function
-~~~~~~~~~~~~~~~~~~~~
+
 #### Style class
+_________
