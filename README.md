@@ -7,14 +7,14 @@
   * [Text](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#text-function)
   * [Downloading](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#downloading-function)
 * [Style](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#style-class)
-  * Center
-  * Square
+  * [Center](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#center-function)
+  * [Square](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#square-function)
 * [Text](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#text-class)
-  * figlet
-  * toilet
-  * GetSpace
-  * ChangeLocation
-  * DeleteSpace
+  * [figlet](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#figlet-function)
+  * [toilet](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#toilet-function)
+  * [GetSpace](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#getspace-function)
+  * [ChangeLocation](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#changelocation-function)
+  * [DeleteSpace](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#deletespace-function)
 
 Also, you can control the colors easily
 * Colors
