@@ -1,11 +1,11 @@
 # V7xStyle
 #### There are 3 classes that you can work on
 * [Animation](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#animation-class)
-  * SlowLine
-  * SlowText
-  * Loading
-  * Text
-  * Downloading
+  * [SlowLine](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#slowline-function)
+  * [SlowText](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#slowtext-function)
+  * [Loading](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#loading-function)
+  * [Text](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#text-function)
+  * [Downloading](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#downloading-function)
 * [Style](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#style-class)
   * Center
   * Square
@@ -196,7 +196,7 @@ print ('\n\n\n'+S)
 Only 7 values in this function
 ___
 ## Text class
-####  figlet
+####  figlet function
 ```python3
 from V7xStyle import Text
 
@@ -204,7 +204,7 @@ Text('Hi').figlet
 ```
 No values in this function
 ___
-####  toilet
+####  toilet function
 ```python3
 from V7xStyle import Text
 
@@ -261,3 +261,29 @@ T = '''
 Space = Text(T).GetSpace
 print(Space)
 ```
+No values in this function
+___
+#### ChangeLocation function
+```python3
+from V7xStyle import Text
+
+T = '''
+AAAAA
+AAAAA
+AAAAA
+
+T = Text(T).ChangeLocation(top=0,
+                           right=5,
+                           bottom=0,
+                           DeleteSpace=True)
+print(T)
+```
+Only 4 values in this function
+___
+#### DeleteSpace function
+```python3
+T = '\n    t e x t\n\n'
+T = Text(T).DeleteSpace
+print(T)
+```
+No values in this function
