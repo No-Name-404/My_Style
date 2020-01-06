@@ -1,8 +1,20 @@
 # V7xStyle
 #### There are 3 classes that you can work on
 * [Animation](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#animation-class)
-* [Style](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#style-class) 
-* Text
+ * SlowLine
+ * SlowText
+ * Loading
+ * Text
+ * Downloading
+* [Style](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#style-class)
+ * Center
+ * Square
+* [Text](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#text-class)
+ * figlet
+ * toilet
+ * GetSpace
+ * ChangeLocation
+ * DeleteSpace
 
 Also, you can control the colors easily
 * Colors
