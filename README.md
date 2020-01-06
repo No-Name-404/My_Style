@@ -181,10 +181,11 @@ example 4...
 ```python3
 from V7xStyle import Style
 
-S = Style( *squares ).Square(Equal=False)
+SQ = ['A1','B22','C333']
+S = Style( *SQ ).Square(Equal=False)
 print (S)
 
-S = Style( *squares ).Square(Equal=True)
+S = Style( *SQ ).Square(Equal=True)
 print (S)
 ```
 example 5...
@@ -193,7 +194,7 @@ from V7xStyle import Style
 
 SQS = ['#','|','#','-','#','|','#','-']
 SQ = ['text\ntext']*3
-S = Style().Square(Square=SQS)
+S = Style(*SQ).Square(Square=SQS)
 print (S)
 ```
 example 6...
@@ -206,8 +207,8 @@ print (S)
 example 7...
 ```python3
 from V7xStyle import Style
-SQ = ['text']*9
 
+SQ = ['text']*9
 S = Style( *SQ ).Square(cols=False)
 print (S)
 
