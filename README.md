@@ -52,7 +52,7 @@ Animation.Loading(text=' Hi %',
                   repeat=1)
 ```
 example 3...
-```python
+```python3
 from V7xStyle import Animation
 
 AQ = ['a','b','c']
@@ -64,7 +64,7 @@ Animation.Loading( text=' text - ',
 Only 4 values in this function
 __________________________
 ####  Text function
-```
+```python3
 from V7xStyle import Animation
 from V7xStyle import (R,G,W,B,P,C,Bl,Y)
 
@@ -80,13 +80,13 @@ __________________________
 ####  Downloading function
 
 example 1...
-```
+```python3
 from V7xStyle import Animation
 
 Animation.Downloading()
 ```
 example 2...
-```
+```python3
 from V7xStyle import Animation
 
 AQ = ['|','█','▒','|']
@@ -102,7 +102,7 @@ Only 5 values in this function
 ___
 ## Style class
 #### Center function
-```
+```python3
 from V7xStyle import Style
 
 a = '12345'
@@ -116,14 +116,14 @@ No values in this function
 ___
 ####  Square function
 example 1...
-```
+```python3
 from V7xStyle import Style
 
 S = Style('text').Square()
 print(S)
 ```
 example 2...
-```
+```python3
 from V7xStyle import Style
 
 S = Style('A','B','C').Square()
@@ -132,9 +132,9 @@ print(S)
 SQ = ['text']*10
 S = Style(*SQ).Square()
 print(S)
-```
+```python3
 example 3...
-```
+```python3
 from V7xStyle import Style
 from V7xStyle import (R,G,W,B,P,C,Bl,Y)
 
@@ -145,7 +145,7 @@ S = Style(*SQ).Square(Color=G,
 print(S)
 ```
 example 4...
-```
+```python3
 from V7xStyle import Style
 
 S = Style( *squares ).Square(Equal=False)
@@ -155,7 +155,7 @@ S = Style( *squares ).Square(Equal=True)
 print (S)
 ```
 example 5...
-```
+```python3
 from V7xStyle import Style
 
 SQS = ['#','|','#','-','#','|','#','-']
@@ -164,14 +164,14 @@ S = Style().Square(Square=SQS)
 print (S)
 ```
 example 6...
-```
+```python3
 from V7xStyle import Style
 
 S = Style('A','B','C').Square(Space=4)
 print (S)
 ```
 example 7...
-```
+```python3
 from V7xStyle import Style
 SQ = ['text']*9
 
@@ -184,3 +184,68 @@ print ('\n\n\n'+S)
 Only 7 values in this function
 ___
 ## Text class
+####  figlet
+```python3
+from V7xStyle import Text
+
+Text('Hi').figlet
+```
+No values in this function
+___
+####  toilet
+```python3
+from V7xStyle import Text
+
+Text('Hi').toilet
+```
+No values in this function
+___
+####  GetSpace
+This function gives you Space text for example... 
+
+`\ntext\n`
+
+the function will give this results..
+```python3
+{
+'top':1,
+'right':0,
+'bottom':1,
+'width':4,
+'height':1               
+}
+```
+example 1...
+```python3
+from V7xStyle import Text
+
+T = '''text
+text
+text'''
+Space = Text(T).GetSpace
+print(Space)
+```
+example 2...
+```python3
+from V7xStyle import Text
+
+T = '''
+ text
+text
+ textt
+'''
+Space = Text(T).GetSpace
+print(Space)
+```
+example 3...
+```python3
+from V7xStyle import Text
+
+T = '''
+ text
+  text
+ text
+'''
+Space = Text(T).GetSpace
+print(Space)
+```
