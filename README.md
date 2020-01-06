@@ -1,4 +1,25 @@
 # V7xStyle
+Input...
+```python3
+from V7xStyle import Style,Animation,Text
+
+title = Style('My Tool B#{C#2.10B#}')
+title = title.Square(padding_x=20)
+
+tools = ['tools']*30
+tools = [f'[{N+1}] G#{T}' for N,T in enumerate(tools)]
+tools = Style(*tools)
+tools = tools.Square(cols=3,padding_x=2,Space=2)
+
+end = Style('Y#Exit').Square(padding_x=25)
+
+MyStyle = [title,tools,end]
+MyStyle = Style(*MyStyle).Center
+
+print (MyStyle)
+```
+Output...
+![Screenshot_٢٠٢٠٠١٠٦_٢٣٥٧٤٧](https://user-images.githubusercontent.com/56244233/71855293-ecb03580-30e0-11ea-998d-b953375514ba.jpg)
 #### There are 3 classes that you can work on
 * [Animation](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#animation-class)
   * [SlowLine](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#slowline-function)
