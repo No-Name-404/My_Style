@@ -212,7 +212,7 @@ Text('Hi').toilet
 ```
 No values in this function
 ___
-####  GetSpace
+####  GetSpace function
 This function gives you Space text for example... 
 
 `\ntext\n`
