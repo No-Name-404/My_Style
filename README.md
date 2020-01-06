@@ -17,7 +17,7 @@
   * [DeleteSpace](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#deletespace-function)
 
 Also, you can control the colors easily
-* Colors
+* [Colors](https://github.com/No-Name-404/V7xStyle/blob/master/README.md#colors)
 
 
 # The method of work
@@ -287,3 +287,47 @@ T = Text(T).DeleteSpace
 print(T)
 ```
 No values in this function
+___
+# Colors
+
+There are 9 primary colors in the library... 
+```python3
+BL,Bl,R,G,Y,B,P,C,W = [
+    '\033[0;30m', # black
+    '\033[1;30m', # grey
+    '\033[0;31m', # red
+    '\033[0;32m', # green
+    '\033[0;33m', # yellow
+    '\033[0;34m', # blue
+    '\033[0;35m', # purple
+    '\033[0;36m', # cyan
+    '\033[0;37m', # white
+]
+```
+You can import it this way... 
+```python3
+from V7xStyle import (BL,R,G,W,B,P,C,Bl,Y)
+```
+How to use colors?
+example 1... 
+```python3
+from V7xStyle import (BL,R,G,W,B,P,C,Bl,Y)
+print (R+'Hi')
+
+# or
+from V7xStyle import Text
+print ( Text('R#Hi') )
+print ( Text('G#Hi') )
+print ( Text('B#Hi') )
+print ( Text('P#Hi') )
+```
+example 2... 
+if you want to add a new color... 
+```python3
+from V7xStyle import Stylefrom V7xStyle import Style
+import V7xStyle
+
+V7xStyle.graphics.Color_C += ['\003[88m']
+S = Style().Square(color='\003[88m')
+print(S)
+```
