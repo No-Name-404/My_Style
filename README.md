@@ -165,7 +165,7 @@ print(S)
 SQ = ['text']*10
 S = Style(*SQ).Square()
 print(S)
-```python3
+```
 example 3...
 ```python3
 from V7xStyle import Style
