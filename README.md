@@ -11,7 +11,7 @@ Also, you can control the colors easily
 # The method of work
 ## Animation class
 ####  SlowLine function
-```
+```python3
 from V7xStyle import Animation
 text = '''
 text text text text text text
@@ -26,7 +26,7 @@ Animation.SlowLine(text, time=0.001)
 Only 2 values in this function
 __________________________
 ####  SlowText function
-```
+```python3
 from V7xStyle import Animation
 text = 'text text text text text text'
 
@@ -37,13 +37,13 @@ __________________________
 ####  Loading function
 
 example 1... 
-```
+```python3
 from V7xStyle import Animation
 
 Animation.Loading( text=' text ' )
 ```
 example 2...
-```
+```python3
 from V7xStyle import Animation
 
 AQ = [ str(i+1) for i in range(100) ]
@@ -52,7 +52,7 @@ Animation.Loading(text=' Hi %',
                   repeat=1)
 ```
 example 3...
-```
+```python
 from V7xStyle import Animation
 
 AQ = ['a','b','c']
