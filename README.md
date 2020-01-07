@@ -293,6 +293,7 @@ T = '''
 AAAAA
 AAAAA
 AAAAA
+'''
 
 T = Text(T).ChangeLocation(top=0,
                            right=5,
@@ -304,6 +305,8 @@ Only 4 values in this function
 ___
 #### DeleteSpace function
 ```python3
+from V7xStyle import Text
+
 T = '\n    t e x t\n\n'
 T = Text(T).DeleteSpace
 print(T)
