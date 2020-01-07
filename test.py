@@ -2,12 +2,12 @@ from V7xStyle import Text
 
 text = '''
 example...
-We use cookies and other tracking
-technologies to improve your brow
-sing experience on our site, show
-personalized content and targeted
-ads, analyze site traffic, and un
-derstand where our audiences come
+text text text
+text text text
+text text text
+text text text
+text text text
+text text text
 '''
 
 # example 1

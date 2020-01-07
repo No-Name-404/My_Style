@@ -1,7 +1,3 @@
-'''
-for more information ...
-[ https://github.com/No-Name-404/V7xStyle ]
-'''
 import time ,sys ,os
 # color...
 BL,Bl,R,G,Y,B,P,C,W = [
@@ -359,7 +355,7 @@ class Style():
 
 class Animation:
     @classmethod
-    def SlowLine(self,Text,time=0.1):
+    def SlowLine(self,Text,time=0.001):
         text().Incremental_Big_Text(Text,Time=time)
 
     @classmethod
