@@ -366,7 +366,7 @@ print ( Text('P#Hi') )
 example 2...
 if you want to add a new color...
 ```python3
-from V7xStyle import Stylefrom V7xStyle import Style
+from V7xStyle import Style
 import V7xStyle
 
 V7xStyle.graphics.Color_C += ['\003[88m']
