@@ -220,15 +220,14 @@ Only 7 values in this function
 ___
 ## Text class
 ####  figlet function
-<<<<<<< HEAD
+
 before use this function you must install figlet...
 
 Install in kali:`sudo apt-get install figlet`
+
 Install in termux:`pkg install figlet`
 
 example...
-=======
->>>>>>> 43348151f449c8d2015dddb5cfa2479604ea21e3
 ```python3
 from V7xStyle import Text
 
