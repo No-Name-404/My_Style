@@ -236,6 +236,14 @@ Text('Hi').figlet
 No values in this function
 ___
 ####  toilet function
+
+before use this function you must install toilet...
+
+Install in kali:`sudo apt-get install toilet`
+
+Install in termux:`pkg install toilet`
+
+example...
 ```python3
 from V7xStyle import Text
 
