@@ -373,7 +373,7 @@ import V7xStyle
 S = Style('text').Square(Color=G)
 print(S)
 
-V7xStyle.graphics.Color_C += ['\033[1;32m']
+V7xStyle.Color_C += ['\033[1;32m']
 S = Style('text').Square(Color='\033[1;32m')
 print(S)
 ```
