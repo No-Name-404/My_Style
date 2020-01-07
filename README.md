@@ -367,9 +367,13 @@ example 2...
 if you want to add a new color...
 ```python3
 from V7xStyle import Style
+from V7xStyle import (BL,R,G,W,B,P,C,Bl,Y)
 import V7xStyle
 
-V7xStyle.graphics.Color_C += ['\003[88m']
-S = Style('text').Square(color='\003[88m')
+S = Style('text').Square(Color=G)
+print(S)
+
+V7xStyle.graphics.Color_C += ['\003[1;32m']
+S = Style('text').Square(Color='\003[1;32m')
 print(S)
 ```
