@@ -69,7 +69,7 @@ Only 2 values in this function
 __________________________
 ####  Loading function
 
-example 1... 
+example 1...
 ```python3
 from V7xStyle import Animation
 
@@ -220,12 +220,15 @@ Only 7 values in this function
 ___
 ## Text class
 ####  figlet function
+<<<<<<< HEAD
 before use this function you must install figlet...
 
 Install in kali:`sudo apt-get install figlet`
 Install in termux:`pkg install figlet`
 
 example...
+=======
+>>>>>>> 43348151f449c8d2015dddb5cfa2479604ea21e3
 ```python3
 from V7xStyle import Text
 
@@ -242,7 +245,7 @@ Text('Hi').toilet
 No values in this function
 ___
 ####  GetSpace function
-This function gives you Space text for example... 
+This function gives you Space text for example...
 
 `\ntext\n`
 
@@ -322,7 +325,7 @@ No values in this function
 ___
 # Colors
 
-There are 9 primary colors in the library... 
+There are 9 primary colors in the library...
 ```python3
 BL,Bl,R,G,Y,B,P,C,W = [
     '\033[0;30m', # black
@@ -336,12 +339,12 @@ BL,Bl,R,G,Y,B,P,C,W = [
     '\033[0;37m', # white
 ]
 ```
-You can import it this way... 
+You can import it this way...
 ```python3
 from V7xStyle import (BL,R,G,W,B,P,C,Bl,Y)
 ```
 How to use colors?
-example 1... 
+example 1...
 ```python3
 from V7xStyle import (BL,R,G,W,B,P,C,Bl,Y)
 print (R+'Hi')
@@ -353,8 +356,8 @@ print ( Text('G#Hi') )
 print ( Text('B#Hi') )
 print ( Text('P#Hi') )
 ```
-example 2... 
-if you want to add a new color... 
+example 2...
+if you want to add a new color...
 ```python3
 from V7xStyle import Stylefrom V7xStyle import Style
 import V7xStyle
