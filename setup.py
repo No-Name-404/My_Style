@@ -8,7 +8,7 @@ setuptools.setup(
     version="2.0",
     author="Example Author",
     author_email="mohammedkainaiahmaed@gmail.com",
-    description="Style for (termux & kali) tools...",
+    description="Style for ( Termux & Kali ) tools...",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/No-Name-404/Style",

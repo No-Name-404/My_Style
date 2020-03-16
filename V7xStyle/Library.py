@@ -293,7 +293,7 @@ class Style(ProFunctions):
     def Square(self,Square=['╔','║','╚','═','╝','║','╗','═'],space=0,padding_x=0,padding_y=0,Color=Color.clb[2],cols=False,Equal=True):
         text = self.args
         if Equal:
-            self.args = self.Equal(*self.args)
+            text = self.Equal(*self.args)
         Style = []
         xs = []
         STYLE = ''
@@ -357,7 +357,7 @@ class Animation:
         print('')
 
     # Loading animation...
-    def Loading(AT=['R#|','G#\\','B#-','Y#/'],text='text...',t=0.1,repeat=10):
+    def Loading(AT=['|','/','-','\\'],text='text...',t=0.1,repeat=10):
         text = Color.reader(str(text))
         for i in range(repeat):
             for i in range(0,len(AT)):
