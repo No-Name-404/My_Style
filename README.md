@@ -11,7 +11,7 @@ ___
 #----------------------------------------#
 #                                        #
 #        ''' Class Animation '''         #
-from V7xStyle import Animmation
+from V7xStyle import Animation
 A = Animation
 text ='''
 text texttext text texttext
