@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="V7xStyle",
-    version="2.0",
+    version="2.0.1",
     author="Example Author",
     author_email="mohammedkainaiahmaed@gmail.com",
     description="Style for ( Termux & Kali ) tools...",

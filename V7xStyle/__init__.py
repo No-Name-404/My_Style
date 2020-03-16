@@ -1,6 +1,6 @@
 from V7xStyle.Library import Animation, Style, Text, Color
 from V7xStyle.Library import BL,W,P,Y,C,Bl,G,B,R
-__version__ = '2.0'
+__version__ = '2.0.1'
 __doc__ = '''
 from V7xStyle import Animation, Text,Style
 #                   1                    #
