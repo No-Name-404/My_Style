@@ -12,12 +12,8 @@ Bl,R,G,B,Y,P,C,W = [
 ]
 __version__ = '2.0.1'
 __doc__ = '''
-  |----------------------------------------------|
-  | Follow me  : https://t.me/No_Name_999        |
-  | Support me : https://paypal.me/mohamedkainai |
-  |----------------------------------------------|
+Follow me  : https://t.me/No_Name_999        
+Support me : https://paypal.me/mohamedkainai 
 
-|--------------------------------------------------|
-| for more information : https://t.me/No_Name_999  |
-|--------------------------------------------------|
+Information : https://github.com/No-Name-404/My_Style
 '''
