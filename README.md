@@ -1,4 +1,4 @@
-# V7xStyle 2.0
+# My_Style 2.0
 
 - Animation
 - Style
@@ -11,7 +11,7 @@ ___
 #----------------------------------------#
 #                                        #
 #        ''' Class Animation '''         #
-from V7xStyle import Animation
+from My_Style import Animation
 A = Animation
 text ='''
 text texttext text texttext
@@ -53,7 +53,7 @@ A.DL()
 #----------------------------------------#
 #                                        #
 #           ''' Class Style '''          #
-from V7xStyle import Style
+from My_Style import Style
 S = Style
 # Class Style (Functions)
 Square = S('A','B','C').Square()
@@ -81,7 +81,7 @@ print(Center)
 #----------------------------------------#
 #                                        #
 #           ''' Class Text '''           #
-from V7xStyle import Text
+from My_Style import Text
 T = Text
 # Class Text (Functions)
 Figlet = T('text').Figlet()
@@ -107,7 +107,7 @@ print(CTL)
 #----------------------------------------#
 #                                        #
 #           ''' Class Color '''          #
-from Library import Color
+from My_Style import Color
 
 Color.Theme('light')
 text_light = Color.reader('W#tG#eC#xB#t')

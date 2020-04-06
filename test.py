@@ -1,4 +1,4 @@
-from V7xStyle import Animation, Text, Style
+from My_Style import Animation, Text, Style
 #                   1                    #
 #----------------------------------------#
 #                                        #
@@ -90,8 +90,8 @@ A.DL()
 #----------------------------------------#
 #                                        #
 #           ''' Class Color '''          #
-from V7xStyle import Color
-from V7xStyle import (BL,Bl,R,G,B,Y,P,C,W)
+from My_Style import Color
+from My_Style import (BL,Bl,R,G,B,Y,P,C,W)
 
 Color.Theme('light')
 text_light = Color.reader('W#tG#eC#xB#t')

@@ -1,4 +1,8 @@
 import time ,sys ,os
+from distutils.spawn import find_executable
+is_exist = lambda text:True if find_executable(
+                            str(text)) else False
+
 # color...
 BL,Bl,R,G,Y,B,P,C,W = [
     '\033[0;30m', # black
@@ -63,6 +67,10 @@ class Color:
     def add(cls,*args):
         for i in args:
             cls.clm.append(i)
+
+# fix AttributeError (str) [Color funciton crash with Color Class]
+Color_ = Color
+#-------------
 
 class ProFunctions:
     def Measure_Sides_text(self,text):
@@ -134,6 +142,7 @@ class ProFunctions:
         check_up.clear()
         return [top,right,down,width,len(height)]
 
+    # text position...
     def CTL2(self,text,top,right,down):
         style = ''
         text = text.split('\n')
@@ -204,13 +213,19 @@ class Text(ProFunctions):
     def Figlet(self):
         text = self.TEXT
         text = os.popen('figlet "%s"'%text).read()
-        return self.DS(text[0:-2])
+        _text = ''
+        for i in text.split('\n')[0:-2]:
+            _text += i+'\n'
+        return _text[0:-1]
 
     # toilet ...
     def Toilet(self):
         text = self.TEXT
         text = os.popen('toilet -f mono12 "%s"'%text).read()
-        return self.DS(text[0:-2])
+        _text = ''
+        for i in text.split('\n')[2:-3]:
+            _text += i+'\n'
+        return _text[0:-1]
 
     # Measure the Text and get the Spaces ...
     def GS(self):
@@ -290,7 +305,9 @@ class Style(ProFunctions):
         self.args = [Color.reader(str(i)) for i in args]
 
     # text in Square ...
-    def Square(self,Square=['╔','║','╚','═','╝','║','╗','═'],space=0,padding_x=0,padding_y=0,Color=Color.clb[2],cols=False,Equal=True):
+    def Square(self,Square=['╔','║','╚','═','╝','║','╗','═'],space=0,padding_x=0,padding_y=0,Color='R#',cols=False,Equal=True):
+        Square = [Color_.reader(i) for i in Square]
+        Color = Color_.reader(Color)
         text = self.args
         if Equal:
             text = self.Equal(*self.args)
@@ -300,7 +317,11 @@ class Style(ProFunctions):
         if not cols:
             cols = len(text)
         for i in text:
-            Style.append(self.square(str( ('\n'*padding_y)+(' '*padding_x)+i+(' '*padding_x)+('\n'*padding_y)),Square,Color))
+            _i = ''
+            for x in i.split('\n'):
+                _i += (' '*padding_x)+x+(' '*padding_x)+'\n'
+            _i = _i[0:-1]
+            Style.append(self.square(str( ('\n'*padding_y)+_i+('\n'*padding_y)),Square,Color))
         cols = cols
         temp = 0
         for i in range(0,len(Style),cols):
@@ -359,6 +380,7 @@ class Animation:
     # Loading animation...
     def Loading(AT=['|','/','-','\\'],text='text...',t=0.1,repeat=10):
         text = Color.reader(str(text))
+        W = Color.reader('W#')
         for i in range(repeat):
             for i in range(0,len(AT)):
                 ASA = Color.reader(str(AT[i]))
